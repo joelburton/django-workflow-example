@@ -12,6 +12,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'foof',
     'watson',
+    'debug_toolbar',
 )
 
 MIDDLEWARE_CLASSES = (
