@@ -4,6 +4,7 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 INSTALLED_APPS = (
+    'django_admin_bootstrapped',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
