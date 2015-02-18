@@ -1,14 +1,5 @@
 from .base import *
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'workflow',
-        'USER': 'workflowpublic',
-        'HOST': 'localhost'
-    }
-}
-
 SHOW_ADMIN = False
 
 MIDDLEWARE_CLASSES = (

@@ -3,6 +3,15 @@ SECRET_KEY = 'h6xnd1s9!vnbx9oqcj+!1=@^t++l$$k7p%@qv%5nr$@@ylhtt('
 DEBUG = True
 TEMPLATE_DEBUG = True
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'workflow',
+        'USER': 'workflowpublic',
+        'HOST': 'localhost'
+    }
+}
+
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',

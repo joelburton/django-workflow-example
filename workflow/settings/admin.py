@@ -1,12 +1,5 @@
 from .base import *
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'workflow',
-        'USER': 'workflowadmin',
-        'HOST': 'localhost'
-    }
-}
+DATABASES['default']['USER'] = "workflowadmin"
 
 SHOW_ADMIN = True

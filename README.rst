@@ -10,7 +10,10 @@ views that filter down to published items.
 
 This has the nice advantage that Django doesn't need to know what's going on -- the public server
 will only ever see or be able to act on published items, while the admin server can see/edit
-everything.
+everything. Similarly, other than needing to write a special database migration (which could be
+out-of-app) and writing a watson handler that adds "published" (see below; this can also be
+out-of-app), the app doesn't need to know anything is going on. This, therefore, is a viable
+strategy for adding workflow to 3rd party products.
 
 Searching: includes django.watson for searching only published item; the admin server searches
 over everything. We do this by creating a view that masks the watson search table view
